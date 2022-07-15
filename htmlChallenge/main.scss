@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 750;
+    max-width: 750px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=IBM+Plex+Sans&family=Nunito&display=swap");
@@ -12,18 +12,54 @@ $primary_font_color: rgb(42, 42, 133);
 $secondary_font_color: rgb(86, 196, 233);
 $button_text_color: white;
 $title_font: "Boogaloo";
-$primary_font_color: "IBM Plex Sans";
+$primary_font: "IBM Plex Sans";
 $blue_font: "Nunito";
 
 body {
     height: auto;
     background-color: $background_color;
     font-size: 45px;
+    margin: 80px 40px 0;
 }
 
+.header,
+    .header * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+}
 
+.header {
+    justify-content: space-between;
+    width: 100%;
+}
 
+.logo {
+    font-family: $title_font;
+    color: $primary_font_color;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+}
 
+#login {
+    border: 2px solid navy;
+    background-color: $background_color;
+    color: $primary_font_color;
+    width: 220px;
+    height: 90px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: $primary_font;
+    font-size: 35px;
+    padding: 5px 0 5px 0;
+}
+
+#login:hover {
+    background-color: navy;
+    color: white;
+}
 
 
 
@@ -51,7 +87,7 @@ a:visited {
     text-align: center;
     border-radius: 5px;
     padding: 20px 40px;
-    font-family: $primary_font_color;
+    font-family: $primary_font;
     font-size: 35px;
 }
 
